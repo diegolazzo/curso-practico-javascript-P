@@ -27,7 +27,22 @@ Base: ${baseTriangulo}`);
 
 const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
 console.log(`El perímetro del triángulo es de: ${perimetroTriangulo}`);
-console.groupEnd();
 
-// const areaCuadrado = ladoCuadrado * ladoCuadrado;
-// console.log(`El área del cuadrado mide: ${areaCuadrado}`);
+//Area del triangulo
+const semiperimetroTriangulo = perimetroTriangulo / 2;
+console.log(`El semiperímetro del triángulo es: ${semiperimetroTriangulo}`);
+
+const alturaTriangulo =
+  (2 / baseTriangulo) *
+  Math.sqrt(
+    semiperimetroTriangulo *
+      (semiperimetroTriangulo - ladoTriangulo2) *
+      (semiperimetroTriangulo - baseTriangulo) *
+      (semiperimetroTriangulo - ladoTriangulo1)
+  );
+
+console.log(`La altura del triángulo es de: ${alturaTriangulo}`);
+
+const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+console.log(`El área del triángulo es: ${areaTriangulo}`);
+console.groupEnd();
