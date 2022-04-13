@@ -11,8 +11,26 @@
     <script src="./figures.js"></script>
 
     <main>
-      <section class="section-1">
+      <header>
         <h1>Cálculo de Figuras Geométricas</h1>
+        <p>Primer Taller de Javascript Práctico</p>
+      </header>
+      <section class="section-1">
+        <h2>Calculando el Área y Perímetro de un cuadrado</h2>
+        <form action="">
+          <label for="InputCuadrado"
+            >Ingresa la medida del lado del cuadrado</label
+          >
+          <!-- Es imortante que el for y el id del input estén conectados -->
+          <input id="InputCuadrado" type="number" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular Perímetro
+          </button>
+          <!-- Importante en este ipo de accion poner boton tipo button -->
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular Área
+          </button>
+        </form>
       </section>
     </main>
   </body>

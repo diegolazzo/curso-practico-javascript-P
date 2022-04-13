@@ -7,6 +7,10 @@ html {
   font-size: 62.5%;
 }
 
+header {
+  margin: 8px;
+}
+
 .section-1 {
   margin: 8px;
 }
