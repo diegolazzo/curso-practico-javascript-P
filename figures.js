@@ -104,6 +104,14 @@ function areaTriangulo(lado1, lado2, base) {
   return areaTriangulo;
 }
 
+//Otra forma de hacer console.log con objeto
+console.log({
+  perimetroTriangulo,
+  semiperimetroTriangulo,
+  alturaTriangulo,
+  areaTriangulo,
+});
+
 //AQUI interactuamos con el HTML
 //En la consola del navegador escribo:
 //document.getElementById("InputCuadrado") y puedo identificar el input que necesito
@@ -112,7 +120,9 @@ function calcularPerimetroCuadrado() {
   const value = input.value; //así ya estoy leyendo lo que escribe el usuario
 
   const perimetro = perimetroCuadrado(value);
-  alert(perimetro);
+
+  const resultadoPerimetro = document.getElementById("ResultadoPerimetro");
+  resultadoPerimetro.innerText = `Perímetro = ${perimetro} cm`;
 }
 //
 
@@ -121,5 +131,7 @@ function calcularAreaCuadrado() {
   const value = input.value; //así ya estoy leyendo lo que escribe el usuario
 
   const area = areaCuadrado(value);
-  alert(area);
+
+  const resultadoArea = document.getElementById("ResultadoArea");
+  resultadoArea.innerText = `Área = ${area} cm2`;
 }

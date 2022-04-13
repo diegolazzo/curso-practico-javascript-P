@@ -19,7 +19,7 @@
         <h2>Calculando el Área y Perímetro de un cuadrado</h2>
         <form action="">
           <label for="InputCuadrado"
-            >Ingresa la medida del lado del cuadrado</label
+            >Ingresa la medida del lado del cuadrado (cm)</label
           >
           <!-- Es imortante que el for y el id del input estén conectados -->
           <input id="InputCuadrado" type="number" />
@@ -30,6 +30,9 @@
           <button type="button" onclick="calcularAreaCuadrado()">
             Calcular Área
           </button>
+
+          <p id="ResultadoPerimetro"></p>
+          <p id="ResultadoArea"></p>
         </form>
       </section>
     </main>
